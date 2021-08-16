@@ -14,7 +14,7 @@ func main() {
 	}
 
 	db := config.Connect(db_config["user"], db_config["pass"], db_config["db_name"])
-    defer db.Close()
+	defer db.Close()
 
 
 	rows, err := db.Query("SELECT productKey FROM products")
