@@ -12,9 +12,9 @@ func Connect(user string, pass string, db_name string) *sql.DB {
 
 	var db *sql.DB
 	var err error
-    if db, err = sql.Open("mysql", url); err != nil {
-        panic("Could not connect to db.\n" + err.Error())
-    }
+	if db, err = sql.Open("mysql", url); err != nil {
+		panic("Could not connect to db.\n" + err.Error())
+	}
 	return db
 }
 
